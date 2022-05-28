@@ -1,1 +1,1 @@
-Java coding for WIA1002 subject
+Java codes for WIA1002 Data Structure
