@@ -1,2 +1,1 @@
-This is collections of coding of WIX002 Fundamentals Of Programming, Semester 1, 2021/2022 
-First Year student University of Malaya.
+Collections of coding for WIX002 Fundamentals Of Programming, Semester 1, 2021/2022
