@@ -1,1 +1,0 @@
-Collections of coding for WIX002 Fundamentals Of Programming, Semester 1, 2021/2022
