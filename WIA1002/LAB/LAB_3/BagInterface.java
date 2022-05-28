@@ -1,3 +1,5 @@
+package WIA1002.LAB.LAB_3;
+
 /**
  An interface that describes the operations of a bag of objects.
  */

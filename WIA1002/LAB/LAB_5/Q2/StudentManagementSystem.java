@@ -1,4 +1,4 @@
-package Q2;
+package WIA1002.LAB.LAB_5.Q2;
 
 import java.util.Scanner;
 

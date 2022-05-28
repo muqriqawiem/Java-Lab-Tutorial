@@ -1,3 +1,5 @@
+package WIA1002.LAB.LAB_6;
+
 public class TestMyStack {
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Q3;
+package WIA1002.LAB.LAB_5.Q3;
 
 public class TestDoublyLinkedList {
 

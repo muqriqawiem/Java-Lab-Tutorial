@@ -1,4 +1,4 @@
-package Q2;
+package WIA1002.LAB.LAB_5.Q2;
 
 public class SinglyLinkedList<E> {
     private SNode<E> head;

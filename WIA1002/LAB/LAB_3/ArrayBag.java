@@ -1,3 +1,5 @@
+package WIA1002.LAB.LAB_3;
+
 public class ArrayBag<T> implements BagInterface<T> {
     private static final int DEFAULT_CAPACITY = 25;
     private T[] bag;

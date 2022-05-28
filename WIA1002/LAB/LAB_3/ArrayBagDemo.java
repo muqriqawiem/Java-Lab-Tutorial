@@ -1,3 +1,5 @@
+package WIA1002.LAB.LAB_3;
+
 public class ArrayBagDemo {
 
     public static void main(String[] args) {

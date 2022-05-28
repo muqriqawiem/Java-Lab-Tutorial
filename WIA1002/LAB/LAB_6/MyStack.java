@@ -1,3 +1,5 @@
+package WIA1002.LAB.LAB_6;
+
 import java.util.ArrayList;
 
 public class MyStack<E> {

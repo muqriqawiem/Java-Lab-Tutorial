@@ -1,3 +1,5 @@
+package WIA1002.LAB.LAB_4;
+
 public class MyLinkedList<E> {
     Node<E> head;
     Node<E> tail;

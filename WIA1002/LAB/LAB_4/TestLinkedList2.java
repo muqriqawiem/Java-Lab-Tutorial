@@ -1,3 +1,5 @@
+package WIA1002.LAB.LAB_4;
+
 public class TestLinkedList2 {
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Q1;
+package WIA1002.LAB.LAB_5.Q1;
 
 public class TestSList {
 
