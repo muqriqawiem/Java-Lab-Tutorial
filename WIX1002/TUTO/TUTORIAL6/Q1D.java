@@ -19,10 +19,11 @@ public class Q1D {
          */
 
         int inputNumber;
-        Scanner userInput = new Scanner(System.in);
-        System.out.println("Please enter an integer number:");
-        inputNumber = userInput.nextInt();
-//Call Java method here
+        try (Scanner userInput = new Scanner(System.in)) {
+            System.out.println("Please enter an integer number:");
+            inputNumber = userInput.nextInt();
+        }
+        //Call Java method here
         System.out.println("Is " + inputNumber + " a pentagonal number?");
         System.out.println(checkPentagonal(inputNumber));
     }

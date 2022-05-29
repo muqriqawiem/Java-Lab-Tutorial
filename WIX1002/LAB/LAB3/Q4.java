@@ -18,12 +18,12 @@ public class Q4 {
         player with the highest score wins the game. 
          */
         int dice01, dice02, dice03, dice04, sum01, sum02;
-        String player01, player02;
+        String player01;
 
-        Scanner number01 = new Scanner(System.in);
-        System.out.print("Are you player one? If not, type [no]. If yes type [ready] to start. ");
-        player01 = number01.next();
-
+        try (Scanner number01 = new Scanner(System.in)) {
+            System.out.print("Are you player one? If not, type [no]. If yes type [ready] to start. ");
+            player01 = number01.next();
+        }
         if ("ready".equals(player01)) {
             Random rand01 = new Random();
             dice01 = rand01.nextInt(5) + 1;

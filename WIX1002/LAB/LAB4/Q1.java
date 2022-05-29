@@ -14,11 +14,11 @@ public class Q1 {
     public static void main(String[] args) {        /*
         Write a program that accepts an integer from user. Then, display its entire factors in increasing order.
         */
-        int number,factor;
-        Scanner number01 = new Scanner(System.in);
-        System.out.print("Enter an integer: ");
-        number = number01.nextInt();
-        
+        int number;
+        try (Scanner number01 = new Scanner(System.in)) {
+            System.out.print("Enter an integer: ");
+            number = number01.nextInt();
+        }
         System.out.printf("\nFactors of %d are: ",number);
         
         for(int i = 1;i <= number;++i){

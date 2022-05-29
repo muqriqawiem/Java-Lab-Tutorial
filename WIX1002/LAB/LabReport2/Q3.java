@@ -7,11 +7,12 @@ public class Q3 {
     public static void main(String[] args) {
         String s;
         int k;
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter any number: ");
-        s = sc.next();
-        System.out.print("Enter any number to be divided with the number above: ");
-        k = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter any number: ");
+            s = sc.next();
+            System.out.print("Enter any number to be divided with the number above: ");
+            k = sc.nextInt();
+        }
         System.out.println(CompBrain(s, k));
     }
 

@@ -15,11 +15,12 @@ public class WeightCalculator {
     }
 
     public void setAll() {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter age: ");
-        this.age = sc.nextInt();
-        System.out.print("Enter height: ");
-        this.height = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter age: ");
+            this.age = sc.nextInt();
+            System.out.print("Enter height: ");
+            this.height = sc.nextInt();
+        }
         this.weight = (height - 100 + age / 10) * 0.9;
     }
 

@@ -16,10 +16,10 @@ public class Q1 {
         // The program will display the degree Celsius in two decimal places.  Celsius = (Fahrenheit – 32) / 1.8
         float fahrenheit, celcius;
 
-        Scanner keyboard = new Scanner(System.in);
-        System.out.println("Enter temperature in degree Fahrenheit: ");
-        fahrenheit = keyboard.nextFloat();
-
+        try (Scanner keyboard = new Scanner(System.in)) {
+            System.out.println("Enter temperature in degree Fahrenheit: ");
+            fahrenheit = keyboard.nextFloat();
+        }
         celcius = (float) ((fahrenheit - 32) / 1.8);
 
         System.out.printf("\nThe temperature in degree Celcius is " + "%.2f", celcius);

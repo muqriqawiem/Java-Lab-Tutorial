@@ -18,10 +18,11 @@ public class Q1E {
          */
 
         String inputString;
-        Scanner userInput = new Scanner(System.in);
-        System.out.println("Please enter a string (letter + numbers):");
-        inputString = userInput.nextLine();
-//Call java method here
+        try (Scanner userInput = new Scanner(System.in)) {
+            System.out.println("Please enter a string (letter + numbers):");
+            inputString = userInput.nextLine();
+        }
+        //Call java method here
         countCharacter(inputString);
     }
 

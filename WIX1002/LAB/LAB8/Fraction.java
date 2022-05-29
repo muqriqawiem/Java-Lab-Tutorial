@@ -12,11 +12,12 @@ public class Fraction {
     }
 
     public void set() {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Numerator: ");
-        this.numerator = sc.nextInt();
-        System.out.print("Denominator: ");
-        this.denominator = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Numerator: ");
+            this.numerator = sc.nextInt();
+            System.out.print("Denominator: ");
+            this.denominator = sc.nextInt();
+        }
         simplestForm();
     }
 

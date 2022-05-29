@@ -20,14 +20,14 @@ public class Q3 {
         
         double SaleVolume,commission,TotalSale;
         
-        Scanner number01 = new Scanner(System.in);
-        System.out.print("Enter the sales volume: ");
-        SaleVolume = number01.nextDouble();
-        
-        Scanner number02 = new Scanner(System.in);
-        System.out.print("Enter the total sale: ");
-        TotalSale = number02.nextDouble();
-        
+        try (Scanner number01 = new Scanner(System.in)) {
+            System.out.print("Enter the sales volume: ");
+            SaleVolume = number01.nextDouble();
+        }
+        try (Scanner number02 = new Scanner(System.in)) {
+            System.out.print("Enter the total sale: ");
+            TotalSale = number02.nextDouble();
+        }
         if(SaleVolume <= 100){
             commission = 0.05 *  TotalSale;
             System.out.printf("Your commission is %.2f . ",commission);

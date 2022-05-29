@@ -22,18 +22,18 @@ public class Q1 {
         int num01,num02,answer;
         String letter;
         
-        Scanner number01 = new Scanner(System.in);
-        System.out.print("Enter the first number: ");
-        num01 = number01.nextInt();
-        
-        Scanner number02 = new Scanner(System.in);
-        System.out.print("Enter the second number: ");
-        num02 = number02.nextInt();
-        
-        Scanner character = new Scanner(System.in);
-        System.out.print("Enter the operand: ");
-        letter = character.next();
-        
+        try (Scanner number01 = new Scanner(System.in)) {
+            System.out.print("Enter the first number: ");
+            num01 = number01.nextInt();
+        }
+        try (Scanner number02 = new Scanner(System.in)) {
+            System.out.print("Enter the second number: ");
+            num02 = number02.nextInt();
+        }
+        try (Scanner character = new Scanner(System.in)) {
+            System.out.print("Enter the operand: ");
+            letter = character.next();
+        }
         if("+".equals(letter)){
             answer = num01 + num02;
             System.out.println(num01 + " " + letter + " " + num02 + " = " + answer);

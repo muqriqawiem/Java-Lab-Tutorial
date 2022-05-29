@@ -15,18 +15,18 @@ public class Q6 {
         //Write a program that calculates the energy needed to heat water. 
         float WaterGram, InitialTempFahre, FinalTempFahre, WaterKilogram, energy, InitialTempCelcius, FinalTempCelcius;
 
-        Scanner WaterInGram = new Scanner(System.in);
-        System.out.println("Enter the amount of water in gram: ");
-        WaterGram = WaterInGram.nextFloat();
-
-        Scanner InitialTempFahrenheit = new Scanner(System.in);
-        System.out.println("Enter the initial temperature in Fahrenheit: ");
-        InitialTempFahre = InitialTempFahrenheit.nextFloat();
-
-        Scanner FinalTempFahrenheit = new Scanner(System.in);
-        System.out.println("Enter the final temperature in Fahrenheit: ");
-        FinalTempFahre = FinalTempFahrenheit.nextFloat();
-
+        try (Scanner WaterInGram = new Scanner(System.in)) {
+            System.out.println("Enter the amount of water in gram: ");
+            WaterGram = WaterInGram.nextFloat();
+        }
+        try (Scanner InitialTempFahrenheit = new Scanner(System.in)) {
+            System.out.println("Enter the initial temperature in Fahrenheit: ");
+            InitialTempFahre = InitialTempFahrenheit.nextFloat();
+        }
+        try (Scanner FinalTempFahrenheit = new Scanner(System.in)) {
+            System.out.println("Enter the final temperature in Fahrenheit: ");
+            FinalTempFahre = FinalTempFahrenheit.nextFloat();
+        }
         WaterKilogram = WaterGram / 1000;
         InitialTempCelcius = (float) ((InitialTempFahre - 32) * (0.5555));
         FinalTempCelcius = (float) ((FinalTempFahre - 32) * (0.5555));

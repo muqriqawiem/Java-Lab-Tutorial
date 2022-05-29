@@ -10,16 +10,17 @@ public class BankAccount {
     double depositAmount;
 
     public BankAccount() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your personal infomation");
-        System.out.print("Name: ");
-        this.name = sc.nextLine();
-        System.out.print("IC: ");
-        this.IC = sc.nextLine();
-        System.out.print("Passport number: ");
-        this.passportNumber = sc.nextLine();
-        System.out.print("Deposit Amount: ");
-        this.depositAmount = sc.nextDouble();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter your personal infomation");
+            System.out.print("Name: ");
+            this.name = sc.nextLine();
+            System.out.print("IC: ");
+            this.IC = sc.nextLine();
+            System.out.print("Passport number: ");
+            this.passportNumber = sc.nextLine();
+            System.out.print("Deposit Amount: ");
+            this.depositAmount = sc.nextDouble();
+        }
     }
 
     public void Deposit(double deposit) {

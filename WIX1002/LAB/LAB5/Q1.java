@@ -22,11 +22,11 @@ public class Q1 {
         int N_students;
         int maxScore = 0, minScore = 100, sum = 0;
 
-        //prompt user to input N students
-        Scanner userInput = new Scanner(System.in);
-        System.out.print("Please enter the number of students: ");
-        N_students = userInput.nextInt();
-
+        try (//prompt user to input N students
+        Scanner userInput = new Scanner(System.in)) {
+            System.out.print("Please enter the number of students: ");
+            N_students = userInput.nextInt();
+        }
         int arrayScore[] = new int[N_students];
 
         for (int index = 0; index < arrayScore.length; index++) { //for(int index=0;index <N_students;index++){

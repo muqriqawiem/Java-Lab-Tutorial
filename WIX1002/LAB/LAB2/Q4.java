@@ -15,10 +15,10 @@ public class Q4 {
         //Write a program that converts the seconds to hours, minutes and seconds.
         int second, minute, hour, saat;
 
-        Scanner sec = new Scanner(System.in);
-        System.out.println("Enter the number of seconds: ");
-        second = sec.nextInt();
-
+        try (Scanner sec = new Scanner(System.in)) {
+            System.out.println("Enter the number of seconds: ");
+            second = sec.nextInt();
+        }
         hour = second / 3600;
         minute = ((second % 3600) / 60);
         saat = ((second % 3600) % 60);

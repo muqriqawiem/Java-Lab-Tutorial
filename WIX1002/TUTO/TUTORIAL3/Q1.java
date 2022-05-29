@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package WIX1002.TUTO.TUTORIAL3;
 
 /**
  *

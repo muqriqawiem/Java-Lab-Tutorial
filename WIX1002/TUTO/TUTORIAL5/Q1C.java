@@ -1,6 +1,6 @@
 package WIX1002.TUTO.TUTORIAL5;
 
-import java.util.Arrays;
+//import java.util.Arrays;
 
 /**
  *
@@ -14,7 +14,7 @@ public class Q1C {
     public static void main(String[] args) {
         //Declare an array that used to store 100 students name.
         
-        String [] studentName = new String[100];
+        //String [] studentName = new String[100];
         
     }
     

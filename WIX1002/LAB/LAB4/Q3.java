@@ -17,13 +17,14 @@ public class Q3 {
         deviation (s) of the exam score in a subject. The program will accepts the score and 
         quit if negative score is enter. A sample output is given below.
         */
-        int currentScore,score,min,ma,avg,standardDeviation,a;
+        int currentScore;
         
         
         do{
-            Scanner number01 = new Scanner(System.in);
-            System.out.print("Enter a score[negative score to quit]: ");
-            currentScore = number01.nextInt();
+            try (Scanner number01 = new Scanner(System.in)) {
+                System.out.print("Enter a score[negative score to quit]: ");
+                currentScore = number01.nextInt();
+            }
         }while(currentScore > 0); 
 }
     

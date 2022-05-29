@@ -16,7 +16,7 @@ public class Q2 {
         Write a program that generates 10 non-duplicate random integers within the range 
         from 0 to 20.
          */
-        int tempInteger, countNonDuplicate = 0;
+        int tempInteger;
         int[] arrayNumber = new int[10];
         boolean statusNonDuplicate = false;
         //Generate random number for first index

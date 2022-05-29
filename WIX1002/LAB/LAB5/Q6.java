@@ -19,9 +19,10 @@ integer to create the Pascal Triangle.
          */
 //Initialize or declare
         int row;
-        Scanner userInput = new Scanner(System.in);
-        System.out.println("Enter the number of row of Pascal Triangle to generate:");
-        row = userInput.nextInt();
+        try (Scanner userInput = new Scanner(System.in)) {
+            System.out.println("Enter the number of row of Pascal Triangle to generate:");
+            row = userInput.nextInt();
+        }
         int[][] Pascal = new int[row][row];
 //Assign value 1 for coloumn 1 and zero for the rest
         for (int indexRow = 0; indexRow < row; indexRow++) {

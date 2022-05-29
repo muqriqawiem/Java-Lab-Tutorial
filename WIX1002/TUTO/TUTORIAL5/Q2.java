@@ -12,25 +12,8 @@ public class Q2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        /*
-         * 2.Correct the error for the following statements.
-         * a.
-         * String[] code = {'AAA', 'AAB', 'AAC', 'AAD'};
-         */
-        String[] code = { "AAA", "AAB", "AAC", "AAD" };
-        // Single quaote is for character, string use double quoate
-        /*
-         * b.
-         * int[] num = new num[10];
-         * for(int k=0; k<=num.length(); k++) //
-         * sum+=num;
-         */
-        // Remember index array start with 0
-        // Index for array score: 0, 1, 2, 3, 4
-        int sum = 0;
         int[] num = new int[10];
         for (int k = 0; k < num.length; k++) {
-            sum += num[k];
         }
         /*
          * c.

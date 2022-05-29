@@ -17,22 +17,23 @@ public class Q1 {
 
         int NumOfElement;
         
-        //ask user about the elements inside the array
-        Scanner sc = new Scanner(System.in);
-        System.out.print("How many elements do you want to have in the array? : ");
-        NumOfElement = sc.nextInt();
+        try (//ask user about the elements inside the array
+        Scanner sc = new Scanner(System.in)) {
+            System.out.print("How many elements do you want to have in the array? : ");
+            NumOfElement = sc.nextInt();
 
-        int[] arrayA = new int[NumOfElement];
-        System.out.println("\nEnter " + NumOfElement + " elements: ");
+            int[] arrayA = new int[NumOfElement];
+            System.out.println("\nEnter " + NumOfElement + " elements: ");
 
-        for (int i = 0; i < NumOfElement; i++) {
-            arrayA[i] = sc.nextInt();
+            for (int i = 0; i < NumOfElement; i++) {
+                arrayA[i] = sc.nextInt();
+            }
+
+            System.out.println("\n" + Arrays.toString(arrayA));
+
+            double medianAns = CalcMedian(arrayA);
+            System.out.println("\nMedian: " + medianAns);
         }
-
-        System.out.println("\n" + Arrays.toString(arrayA));
-
-        double medianAns = CalcMedian(arrayA);
-        System.out.println("\nMedian: " + medianAns);
 
     }
 

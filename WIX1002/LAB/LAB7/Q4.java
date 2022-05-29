@@ -2,7 +2,6 @@ package WIX1002.LAB.LAB7;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Q4 {
@@ -10,7 +9,7 @@ public class Q4 {
     public static void main(String[] args) {
         try {
             String text;
-            int countCharacters = 0, countWords = 0, countLines = 0, counting = 0;
+            int countCharacters = 0, countWords = 0, countLines = 0;
 //Read txt. file
             Scanner inputStream = new Scanner(new FileInputStream("data.txt"));
             while (inputStream.hasNextLine()) {

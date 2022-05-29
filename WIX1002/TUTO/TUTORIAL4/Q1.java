@@ -1,7 +1,7 @@
 package WIX1002.TUTO.TUTORIAL4;
 
-import java.util.Random;
-import java.util.Scanner;
+//import java.util.Random;
+//import java.util.Scanner;
 
 /**
  *

@@ -16,11 +16,12 @@ public class Q1B {
 //Define a static method that determine whether the given integer is a square number.
 //Declare or initialize variables
         int intInput;
-//Ask the user to enter an integer
-        Scanner userInput = new Scanner(System.in);
-        System.out.println("Please enter an integer:");
-        intInput = userInput.nextInt();
-//Call method to determine if integer is a square number
+try (//Ask the user to enter an integer
+        Scanner userInput = new Scanner(System.in)) {
+            System.out.println("Please enter an integer:");
+            intInput = userInput.nextInt();
+        }
+        //Call method to determine if integer is a square number
         System.out.println("Is integer a square number?");
         System.out.println(checkSquareNumber(intInput));
 

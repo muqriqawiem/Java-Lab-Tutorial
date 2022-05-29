@@ -1,4 +1,4 @@
-import java.util.Random;
+package WIX1002.LAB.LabReport3;
 
 public class Song {
     // class variables

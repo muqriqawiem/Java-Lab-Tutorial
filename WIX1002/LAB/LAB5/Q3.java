@@ -1,6 +1,5 @@
 package WIX1002.LAB.LAB5;
 
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -20,13 +19,13 @@ public class Q3 {
         */
         
         final int MaxHour = 8;
-        int N, totalHoursEmployee, totalDay = 7;
+        int N, totalDay = 7;
         
-        //prompt user to enter N employee
-        Scanner userInput = new Scanner(System.in);
-        System.out.print("Enter the number of employees: ");
-        N = userInput.nextInt();
-        
+        try (//prompt user to enter N employee
+        Scanner userInput = new Scanner(System.in)) {
+            System.out.print("Enter the number of employees: ");
+            N = userInput.nextInt();
+        }
         //Work hours
         int [][]hours = new int [N][7];
         int []totalHours = new int [N];

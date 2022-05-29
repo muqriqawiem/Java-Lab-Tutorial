@@ -50,14 +50,14 @@ public class Q4 {
     }
 
     public static void main(String[] args) {
-        Scanner userinput = new Scanner(System.in);
+        try (Scanner userinput = new Scanner(System.in)) {
+            System.out.println("a = ");
+            int[] a = getIntArrayFromString(userinput.nextLine());
+            System.out.println("b = ");
+            int[] b = getIntArrayFromString(userinput.nextLine());
 
-        System.out.println("a = ");
-        int[] a = getIntArrayFromString(userinput.nextLine());
-        System.out.println("b = ");
-        int[] b = getIntArrayFromString(userinput.nextLine());
-
-        System.out.printf("Max sum: %d", maxXorSum(a, b));
+            System.out.printf("Max sum: %d", maxXorSum(a, b));
+        }
     }
 
 }

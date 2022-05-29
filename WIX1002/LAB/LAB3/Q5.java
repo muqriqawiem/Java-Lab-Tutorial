@@ -23,30 +23,30 @@ public class Q5 {
         
         System.out.println("ax + by = e \t cx + dy = f\n");
         
-        Scanner number01 = new Scanner(System.in);
-        System.out.print("Enter value for a: ");
-        a = number01.nextInt();
-        
-        Scanner number02 = new Scanner(System.in);
-        System.out.print("Enter value for b: ");
-        b = number02.nextInt();
-        
-        Scanner number03 = new Scanner(System.in);
-        System.out.print("Enter value for c: ");
-        c = number03.nextInt();
-        
-        Scanner number04 = new Scanner(System.in);
-        System.out.print("Enter value for d: ");
-        d = number04.nextInt();
-        
-        Scanner number05 = new Scanner(System.in);
-        System.out.print("Enter value for e: ");
-        e = number05.nextInt();
-        
-        Scanner number06 = new Scanner(System.in);
-        System.out.print("Enter value for f: ");
-        f = number06.nextInt();
-        
+        try (Scanner number01 = new Scanner(System.in)) {
+            System.out.print("Enter value for a: ");
+            a = number01.nextInt();
+        }
+        try (Scanner number02 = new Scanner(System.in)) {
+            System.out.print("Enter value for b: ");
+            b = number02.nextInt();
+        }
+        try (Scanner number03 = new Scanner(System.in)) {
+            System.out.print("Enter value for c: ");
+            c = number03.nextInt();
+        }
+        try (Scanner number04 = new Scanner(System.in)) {
+            System.out.print("Enter value for d: ");
+            d = number04.nextInt();
+        }
+        try (Scanner number05 = new Scanner(System.in)) {
+            System.out.print("Enter value for e: ");
+            e = number05.nextInt();
+        }
+        try (Scanner number06 = new Scanner(System.in)) {
+            System.out.print("Enter value for f: ");
+            f = number06.nextInt();
+        }
         if( ((a*d)-(b*c)) == 0){
             System.out.println("\nThe equation has no solution. ");
         }else{

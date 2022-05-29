@@ -43,10 +43,11 @@ public class Q5 {
         }
         System.out.println("Array n descending order");
         System.out.println(Arrays.toString(arrayNumber));
-        // integer input from the user
-        Scanner userInput = new Scanner(System.in);
-        System.out.println("Enter a number to search:");
-        searchNumber = userInput.nextInt();
+        try (// integer input from the user
+        Scanner userInput = new Scanner(System.in)) {
+            System.out.println("Enter a number to search:");
+            searchNumber = userInput.nextInt();
+        }
         //search the array using this number
         //Using linear search
         boolean status = false;

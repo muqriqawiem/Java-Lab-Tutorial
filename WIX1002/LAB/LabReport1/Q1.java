@@ -1,7 +1,5 @@
 package WIX1002.LAB.LabReport1;
 
-import java.util.Scanner;
-
 /**
  *
  * @author Muqri Qawiem

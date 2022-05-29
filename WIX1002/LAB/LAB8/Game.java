@@ -12,9 +12,10 @@ public class Game {
     }
 
     public void setAll() {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Name: ");
-        this.name = sc.nextLine();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Name: ");
+            this.name = sc.nextLine();
+        }
     }
 
     public int dice() {
