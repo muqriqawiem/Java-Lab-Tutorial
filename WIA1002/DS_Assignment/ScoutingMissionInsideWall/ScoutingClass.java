@@ -72,7 +72,7 @@ public class ScoutingClass {
         return 1;
     }
 
-    /** function to dispplay the solution */
+    /** function to display the solution */
     void displaySolution(int[] path) {
         System.out.println("\nPath found! ");
         for (int i = 0; i < totalVertex; i++)
